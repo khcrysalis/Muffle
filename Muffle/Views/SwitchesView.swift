@@ -64,7 +64,7 @@ struct SwitchesView: View {
 	}
 	
 	@ViewBuilder
-	func _link(_ title: String, urlString: String) -> some View {
+	private func _link(_ title: String, urlString: String) -> some View {
 		Link(destination: URL(string: urlString)!) {
 			Text(title)
 				.foregroundColor(.white)
