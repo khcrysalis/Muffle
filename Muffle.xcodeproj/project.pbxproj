@@ -10,9 +10,22 @@
 		3339AAC72D9F603600D26248 /* Muffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muffle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		335072212D9F846F00080A72 /* Exceptions for "Muffle" folder in "Muffle" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Supporting Files/Info.plist",
+			);
+			target = 3339AAC62D9F603600D26248 /* Muffle */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3339AAC92D9F603600D26248 /* Muffle */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				335072212D9F846F00080A72 /* Exceptions for "Muffle" folder in "Muffle" target */,
+			);
 			path = Muffle;
 			sourceTree = "<group>";
 		};
@@ -246,7 +259,6 @@
 		3339AAD72D9F603800D26248 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Muffle/Supporting Files/Muffle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -256,6 +268,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Muffle/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -275,7 +288,6 @@
 		3339AAD82D9F603800D26248 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Muffle/Supporting Files/Muffle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +298,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Muffle/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
