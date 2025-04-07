@@ -18,7 +18,6 @@ struct SwitchesView: View {
 				"Make Finder shut up from popping up every time you plug in an iDevice.",
 				isOn: $isSilenceFinderOn
 			)
-			Divider()
 			_toggleSwitch(
 				"NS🐞",
 				"Ladybug debugging menu",
@@ -27,6 +26,8 @@ struct SwitchesView: View {
 			_footerView()
 		}
 		.padding()
+		.fixedSize(horizontal: false, vertical: true)
+		.frame(width: 300)
 		.onAppear {
 			isSilenceFinderOn = Muffle.isFinderSilenceEnabled()
 			isLadyBugOn = Muffle.isLadybugEnabled()
@@ -53,6 +54,8 @@ struct SwitchesView: View {
 				.foregroundStyle(.primary.opacity(0.7))
 				.font(.subheadline)
 		}
+		
+		Divider()
 	}
 	
 	@ViewBuilder
